@@ -40,4 +40,35 @@ public class UserRegistrationTest {
         Assert.assertFalse(result);
     }
 
-}
+    @Test
+    public void givenLastName_WhenProper_ShouldReturnTure() {
+        UserRegistration registration = new UserRegistration();
+        boolean result = registration.registrationLastName("Bhagi");
+        Assert.assertTrue(result);
+    }
+    @Test
+    public void givenLastName_WhenHaveSplChar_ShouldReturnFalse() {
+        UserRegistration registration = new UserRegistration();
+        boolean result = registration.registrationLastName("Bh@gi");
+        Assert.assertFalse(result);
+    }
+    @Test
+    public void givenLastName_WhenHaveNum_ShouldReturnFalse() {
+        UserRegistration registration = new UserRegistration();
+        boolean result = registration.registrationLastName("Bhagi111");
+        Assert.assertFalse(result);
+    }
+
+    @Test
+    public void givenLastName_WhenHaveSplCharAndNum_ShouldReturnFalse() {
+        UserRegistration registration = new UserRegistration();
+        boolean result = registration.registrationLastName("Bh@gi123");
+        Assert.assertFalse(result);
+    }
+    @Test
+    public void givenLastName_WhenNotProper_ShouldReturnFalse() {
+        UserRegistration registration = new UserRegistration();
+        boolean result = registration.registrationLastName("bhagi");
+        Assert.assertFalse(result);
+    }
+    }

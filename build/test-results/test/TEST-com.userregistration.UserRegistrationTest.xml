@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.userregistration.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-06T18:41:54" hostname="DESKTOP-25DPEJS" time="0.008">
+<testsuite name="com.userregistration.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-06T19:06:11" hostname="DESKTOP-25DPEJS" time="0.006">
   <properties/>
-  <testcase name="givenFirstName_WhenNotProper_ShouldReturnFalse" classname="com.userregistration.UserRegistrationTest" time="0.008"/>
+  <testcase name="givenLastName_WhenNotProper_ShouldReturnFalse" classname="com.userregistration.UserRegistrationTest" time="0.006"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
