@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.userregistration.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-07T07:25:56" hostname="DESKTOP-25DPEJS" time="0.007">
+<testsuite name="com.userregistration.UserRegistrationTest" tests="25" skipped="0" failures="0" errors="0" timestamp="2020-10-07T17:44:46" hostname="DESKTOP-25DPEJS" time="0.164">
   <properties/>
-  <testcase name="givenPassWord_WhenPropre_SholudReturnTrue" classname="com.userregistration.UserRegistrationTest" time="0.007"/>
+  <testcase name="givenPassWord_WhenPropre_SholudReturnTrue" classname="com.userregistration.UserRegistrationTest" time="0.005"/>
+  <testcase name="givenPassWord_WheNotHaveOneSplChar_ShouldReturnFalse" classname="com.userregistration.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenMobileNumber_WhenProper_ShouldReturnTure" classname="com.userregistration.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenFirstName_WhenProper_ShouldReturnTrue" classname="com.userregistration.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenFirstName_WhenHaveSplCharAndNum_ShouldReturnFalse" classname="com.userregistration.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenMobileNumber_WhenNotProper_ShouldReturnFalse" classname="com.userregistration.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPassWord_WhenNotWithOneAtleatNumber_ShouldReturnFalse" classname="com.userregistration.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenPassWord_WhenNotProper_ShouldReturnFalse" classname="com.userregistration.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenPassWord_WhenNotHaveAnAtleastOneUpper_ShouldReturnFalse" classname="com.userregistration.UserRegistrationTest" time="0.008"/>
+  <testcase name="givenEmailAddress_WhenNotProper_ShouldReturnFalse" classname="com.userregistration.UserRegistrationTest" time="0.006"/>
+  <testcase name="givenLastName_WhenHaveNum_ShouldReturnFalse" classname="com.userregistration.UserRegistrationTest" time="0.002"/>
+  <testcase name="givenLastName_WhenHaveSplChar_ShouldReturnFalse" classname="com.userregistration.UserRegistrationTest" time="0.011"/>
+  <testcase name="givenEmailAddress_WhenWithContiuneSplChar_ShouldReturnFalse" classname="com.userregistration.UserRegistrationTest" time="0.015"/>
+  <testcase name="givenLastName_WhenNotProper_ShouldReturnFalse" classname="com.userregistration.UserRegistrationTest" time="0.003"/>
+  <testcase name="givenFirstName_WhenNotProper_ShouldReturnFalse" classname="com.userregistration.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenLastName_WhenProper_ShouldReturnTure" classname="com.userregistration.UserRegistrationTest" time="0.004"/>
+  <testcase name="givenFirstName_WhenHaveNum_ShouldReturnFalse" classname="com.userregistration.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPassWord_WhenProper_ShouldReturnTure" classname="com.userregistration.UserRegistrationTest" time="0.0"/>
+  <testcase name="givenLastName_WhenHaveSplCharAndNum_ShouldReturnFalse" classname="com.userregistration.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPassWord_WhenItproper_ShouldReturnTrue" classname="com.userregistration.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenPassWord_WhenWithOneAtleatNumber_ShouldReturnTrue" classname="com.userregistration.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenEmailAddress_WhenProper_ShouldReturnTure" classname="com.userregistration.UserRegistrationTest" time="0.001"/>
+  <testcase name="givenFirstName_WhenHaveSplChar_ShouldReturnFalse" classname="com.userregistration.UserRegistrationTest" time="0.011"/>
+  <testcase name="givenPassWord_WhenWithOneSplChar_ShouldReturnTrue" classname="com.userregistration.UserRegistrationTest" time="0.003"/>
+  <testcase name="givenPassWord_WhenWithOneAtleatUpper_ShouldReturnTrue" classname="com.userregistration.UserRegistrationTest" time="0.013"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
