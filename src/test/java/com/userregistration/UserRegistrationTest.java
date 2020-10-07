@@ -159,4 +159,12 @@ public class UserRegistrationTest {
         boolean result = registration.registrationPassWord("Bhagyalaxmi@*");
         Assert.assertFalse(result);
     }
+    @Test
+    public void givenPassWord_WhenPropre_SholudReturnTrue()
+    {
+        UserRegistration registration = new UserRegistration();
+        boolean results = registration.registrationPassWord("Bhagya@1");
+        Assert.assertTrue(results);
+
+    }
 }
