@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.userregistration.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-07T05:00:19" hostname="DESKTOP-25DPEJS" time="0.008">
+<testsuite name="com.userregistration.UserRegistrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-07T05:08:55" hostname="DESKTOP-25DPEJS" time="0.029">
   <properties/>
-  <testcase name="givenPassWord_WhenNotHaveAnAtleastOneUpper_ShouldReturnFalse" classname="com.userregistration.UserRegistrationTest" time="0.008"/>
+  <testcase name="givenPassWord_WhenNotWithOneAtleatNumber_ShouldReturnFalse" classname="com.userregistration.UserRegistrationTest" time="0.029"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
