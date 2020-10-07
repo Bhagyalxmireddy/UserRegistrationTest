@@ -92,4 +92,17 @@ public class UserRegistrationTest {
         boolean result = registration.registrationEmailAddress("abc@gmail.in.");
         Assert.assertFalse(result);
     }
+
+    @Test
+    public void givenMobileNumber_WhenProper_ShouldReturnTure() {
+        UserRegistration registration = new UserRegistration();
+        boolean result = registration.registrationMobileNumber("91 9632580147");
+        Assert.assertTrue(result);
+    }
+    @Test
+    public void givenMobileNumber_WhenNotProper_ShouldReturnFalse() {
+        UserRegistration registration = new UserRegistration();
+        boolean result = registration.registrationMobileNumber("963580147");
+        Assert.assertFalse(result);
+    }
 }
