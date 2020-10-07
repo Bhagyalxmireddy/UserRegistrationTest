@@ -7,7 +7,7 @@ public class UserRegistration {
     public static final String NAME_PATTERN = "^[A-Z]{1}[a-zA-Z]{2,}$";
     public static final String EMAIL_PATTERN = "^[a-zA-Z0-9]+(.[a-zA-Z0-9]+)*@[a-zA-Z]+.[a-zA-Z]{2,4}(.[a-zA-Z]{2,2})?$";
     public static final String MOBILE_PATTERN = "(^[0-9]{1,3}[ ]+)?[6-9]+[0-9]{9}$";
-    public static final String PASSWORD_PATTERN = "^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8,20}";
+    public static final String PASSWORD_PATTERN = "^(?=.*[a-z])(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$%*&+?/!]{1,1}).{8,20}";
 
     public boolean registrationFirstName(String fname) {
         Pattern pattern = Pattern.compile(NAME_PATTERN);

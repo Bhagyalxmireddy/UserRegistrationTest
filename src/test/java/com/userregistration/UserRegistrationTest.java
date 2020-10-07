@@ -147,4 +147,16 @@ public class UserRegistrationTest {
         boolean result = registration.registrationPassWord("Bhagyalaxmi");
         Assert.assertFalse(result);
     }
+    @Test
+    public void givenPassWord_WhenWithOneSplChar_ShouldReturnTrue() {
+        UserRegistration registration = new UserRegistration();
+        boolean result = registration.registrationPassWord("Bhagyalaxmi1@");
+        Assert.assertTrue(result);
+    }
+    @Test
+    public void givenPassWord_WheNotHaveOneSplChar_ShouldReturnFalse() {
+        UserRegistration registration = new UserRegistration();
+        boolean result = registration.registrationPassWord("Bhagyalaxmi@*");
+        Assert.assertFalse(result);
+    }
 }
