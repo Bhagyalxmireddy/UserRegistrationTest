@@ -1,12 +1,19 @@
 package com.userregistration;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class UserRegistrationTest {
+    public UserRegistration registration = null;
+
+    @Before
+    public void initialize()
+    {
+       registration = new UserRegistration();
+    }
     @Test
     public void givenFirstName_WhenProper_ShouldReturnTrue() {
-        UserRegistration registration = new UserRegistration();
         boolean result = registration.registrationFirstName("Bhagi");
         Assert.assertTrue(result);
     }
@@ -155,13 +162,11 @@ public class UserRegistrationTest {
     }
     @Test
     public void givenPassWord_WheNotHaveOneSplChar_ShouldReturnFalse() {
-        UserRegistration registration = new UserRegistration();
         boolean result = registration.registrationPassWord("Bhagyalaxmi@*");
         Assert.assertFalse(result);
     }
     @Test
     public void givenPassWord_WhenItproper_ShouldReturnTrue() {
-        UserRegistration registration = new UserRegistration();
         boolean result = registration.registrationPassWord("Bhagya@1");
         Assert.assertTrue(result);
     }
