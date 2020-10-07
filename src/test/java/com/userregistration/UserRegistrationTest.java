@@ -121,6 +121,18 @@ public class UserRegistrationTest {
         UserRegistration registration = new UserRegistration();
         boolean result = registration.registrationPassWord("bhagya");
         Assert.assertFalse(result);
+    }
+    @Test
+    public void givenPassWord_WhenWithOneAtleatUpper_ShouldReturnTrue() {
+        UserRegistration registration = new UserRegistration();
+        boolean result = registration.registrationPassWord("Bhagyalaxmi");
+        Assert.assertTrue(result);
+    }
+    @Test
+    public void givenPassWord_WhenNotHaveAnAtleastOneUpper_ShouldReturnFalse() {
+        UserRegistration registration = new UserRegistration();
+        boolean result = registration.registrationPassWord("bhagyalaxmi");
+        Assert.assertFalse(result);
 
     }
 }
