@@ -80,12 +80,14 @@ public class UserRegistrationTest {
         boolean result = registration.registrationEmailAddress("abc@gmail.com");
         Assert.assertTrue(result);
     }
+
     @Test
     public void givenEmailAddress_WhenWithContiuneSplChar_ShouldReturnFalse() {
         UserRegistration registration = new UserRegistration();
         boolean result = registration.registrationEmailAddress("abc@.gmail.com");
         Assert.assertFalse(result);
     }
+
     @Test
     public void givenEmailAddress_WhenNotProper_ShouldReturnFalse() {
         UserRegistration registration = new UserRegistration();
@@ -99,10 +101,26 @@ public class UserRegistrationTest {
         boolean result = registration.registrationMobileNumber("91 9632580147");
         Assert.assertTrue(result);
     }
+
     @Test
     public void givenMobileNumber_WhenNotProper_ShouldReturnFalse() {
         UserRegistration registration = new UserRegistration();
         boolean result = registration.registrationMobileNumber("963580147");
         Assert.assertFalse(result);
+    }
+
+    @Test
+    public void givenPassWord_WhenProper_ShouldReturnTure() {
+        UserRegistration registration = new UserRegistration();
+        boolean result = registration.registrationPassWord("bhagyalaxmi");
+        Assert.assertTrue(result);
+    }
+
+    @Test
+    public void givenPassWord_WhenNotProper_ShouldReturnFalse() {
+        UserRegistration registration = new UserRegistration();
+        boolean result = registration.registrationPassWord("bhagya");
+        Assert.assertFalse(result);
+
     }
 }
